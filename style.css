@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333; 
+    background-image: url('4k Lamborghini Wallpaper hd.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+
+.registration-section {
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF; 
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin: 20px 0; 
+    display: flex;
+    align-items: center;
+}
+
+label {
+    flex: 1;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555; 
+}
+
+
+
+input[type="text"],
+input[type="date"],
+textarea,
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select,
+input[type="search"],
+input[type="url"],
+input[type="week"],
+input[type="range"] {
+    flex: 2;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; 
+    transition: border-color 0.3s;
+    width: 90%; 
+    color: #333; 
+}
+
+input[type="color"] {
+    width: 93%;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input[type="color"]:focus,
+input[type="range"]:focus {
+    border-color: #007BFF; 
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="number"],
+    select,
+    input[type="search"],
+    input[type="url"],
+    input[type="week"],
+    input[type="color"],
+    input[type="range"] {
+        font-size: 14px;
+    }
+    label {
+        flex: 1;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+
+.range-label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.range-container {
+    margin: 20px 0;
+}
+
+.range-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.range-input:focus {
+    border-color: #007BFF;
+}
+
+

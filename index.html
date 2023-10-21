@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="registration-section">
+        <h2>Registration Form</h2>
+        <form action="register.php" method="post" name="registrationForm" autocomplete="on">
+            <fieldset>
+                <legend>Student Registration</legend>
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date-of-birth">Date of Birth:</label>
+                    <input type="date" id="date-of-birth" name="date-of-birth">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}">
+                </div>
+                
+                <div class="form-group">
+                    <label for="course">Course of Study:</label>
+                    <select id="course" name="course">
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="parent-name">Parent/Guardian's Name:</label>
+                    <input type="text" id="parent-name" name="parent-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="parent-email">Parent/Guardian's Email:</label>
+                    <input type="email" id="parent-email" name="parent-email">
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Upload a Photo:</label>
+                    <input type="file" id="photo" name="photo">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" value="123456" disabled>
+                </div>
+
+           
+
+                <div class="form-group">
+                    <label for="registration-month">Registration Month:</label>
+                    <input type="month" id="registration-month" name="registration-month">
+                </div>
+
+                <div class="form-group">
+                    <label for="registration-number">Registration Number:</label>
+                    <input type="number" id="registration-number" name="registration-number" min="1000" max="9999">
+                </div>
+
+                <div class="form-group">
+                    <label for="payment-method">Payment Method:</label>
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                    <label for="credit-card">Credit Card</label>
+                    <input type="radio" id="paypal" name="payment-method" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="score-range">Test Score (0-100):</label>
+                    <input type="range" id="score-range" name="score-range" min="0" max="100" step="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="course-search">Search Courses:</label>
+                    <input type="search" id="course-search" name="course-search">
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course of Study:</label>
+                    <select id="course" name="course">
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="monday" name="course-days" value="Monday">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="tuesday" name="course-days" value="Tuesday">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="wednesday" name="course-days" value="Wednesday">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="thursday" name="course-days" value="Thursday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="friday" name="course-days" value="Friday">
+                    <label for="friday">Friday</label>
+                </div>
+                <br><br>
+
+        
+                <label for="course-date">Course Date:</label>
+                <input type="date" id="course-date" name="course-date">
+                <br><br>
+
+            
+                <label for="course-color">Course Color:</label>
+                <input type="color" id="course-color" name="course-color">
+                <br><br>
+
+                <div class="form-group">
+                    <label for="website">Website URL:</label>
+                    <input type="url" id="website" name="website" required pattern="https?://.+">
+                </div>
+                
+ 
+                <div class="form-group">
+                    <label for="enrollment-week">Enrollment Week:</label>
+                    <input type="week" id="enrollment-week" name="enrollment-week">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="subscribe-newsletter" name="subscribe-newsletter">
+                    <label for="subscribe-newsletter">Subscribe to Newsletter</label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
